@@ -1,1 +1,1 @@
-Cypress - node_modules\.bin\cypress open
+Cypress | node_modules\.bin\cypress open
