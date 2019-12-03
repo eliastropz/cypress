@@ -11,12 +11,11 @@ describe('Testando conhecimento', function() {
           cy.get('#can_id').select('Distribuição')
           cy.get('#us_re').type('76826955601')
           cy.get('#us_senha').type('beta')
-          cy.root().submit()
+          cy.root().submit()          
         })
       })
 
-      it('Realizar cadastro PDV', function(){
-        //cy.url().should('include', 'https://betasun.before.com.br') 
+      it('Realizar cadastro PDV', function(){        
         // Acessar menu cadastro e sub-cadastro PDV
         cy.get('#menu_6 > div > span').click()
         cy.get('#submenu_6_4 > div').click()
@@ -25,12 +24,11 @@ describe('Testando conhecimento', function() {
    })
    
     //https://betasun.before.com.br
-    it('Acessar menu ajuda', function(){
-        //cy.url().should('include', 'https://betasun.before.com.br') 
+    it.only('Acessar menu ajuda', function(){       
         // Acessar menu cadastro e sub-cadastro PDV
-        cy.get('#menu_6 > div > span').click()
-        cy.get('#submenu_6_4 > div').click()
-        cy.get('.titulo').click()
+        cy.get('.cor2 > div').click()
+        cy.get('[data-test=titulo]').should('')
+        
 
    })
 })
